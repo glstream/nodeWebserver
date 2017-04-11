@@ -14,12 +14,13 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintence.hbs', {
-        maintence: 'The webiste is under maintence'
-    });
+// app.use((req, res, next) => {
+//     res.render('maintence.hbs', {
+//         maintence: 'The webiste is under maintence'
+//     });
+//     next();
 
-});
+// });
 
 app.use(express.static(__dirname + '/public'));
 
